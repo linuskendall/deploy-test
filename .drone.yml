@@ -4,11 +4,14 @@ build:
     - go get
     - go build
     - go test
+
 publish:
   docker: 
     username: linuskendall
     password: $$DOCKER_PASSWORD
     email: git@linuskendall.com
     repo: linuskendall/deploy-test
+    tag: latest
+    file: Dockerfile
     environment:
         - DOCKER_LAUNCH_DEBUG=true
