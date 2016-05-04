@@ -15,3 +15,5 @@ publish:
     tag:
         - latest
         - $$COMMIT
+    environment:
+        - DOCKER_LAUNCH_DEBUG=true
