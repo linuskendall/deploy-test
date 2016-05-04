@@ -11,8 +11,6 @@ publish:
     password: $$DOCKER_PASSWORD
     email: git@linuskendall.com
     repo: linuskendall/deploy-test
-    file: Dockerfile
-    insecure: false
     tag:
         - latest
         - $$COMMIT
